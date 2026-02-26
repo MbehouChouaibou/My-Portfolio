@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build: .
+    image: my-portfolio:latest
+    ports:
+      - "8787:8787"
+    env_file:
+      - .env
+    restart: unless-stopped
