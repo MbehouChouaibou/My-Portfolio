@@ -34,6 +34,14 @@ export const Footer: React.FC = () => {
             <p className="text-sm text-gray-400">
               Building the future, one line of code at a time.
             </p>
+            <a
+              href="https://njikammbehou.duckdns.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center mt-2 px-3 py-1 rounded-full border border-lime-400/40 bg-lime-400/10 text-xs text-lime-300 hover:bg-lime-400/20 transition-colors"
+            >
+              Live Deployment: njikammbehou.duckdns.org
+            </a>
           </div>
 
           <div className="flex items-center gap-6 justify-center md:justify-end">
