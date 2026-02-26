@@ -58,6 +58,15 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "University Management System (Frontend Project)",
+    description: "Developed a modern, responsive frontend application for EPFPS Meiganga to manage students, courses, departments, and academic workflows with Next.js and REST APIs.",
+    technologies: ["Next.js", "Tailwind CSS", "JavaScript", "TypeScript", "REST APIs"],
+    impact: "Improved usability and administrative efficiency with scalable role-based academic dashboards.",
+    category: "Education",
+    githubUrl: "#",
+    liveUrl: "https://www.univ-mbere.org/"
+  },
+  {
     title: "Smart Inventory Management",
     description: "A comprehensive inventory tracking solution with real-time updates, analytics dashboard, and automated reporting features.",
     technologies: ["React", "Spring Boot", "PostgreSQL", "Docker", "AWS"],

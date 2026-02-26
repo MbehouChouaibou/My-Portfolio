@@ -85,7 +85,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           {/* Download CV */}
           <motion.button
             onClick={() =>
-              window.open("/files/Njikam_Mbehou_Chouaibou_CV.pdf", "_blank")
+              window.open("/files/NjIKAM_MBEHOU_CHOUAIBOU.pdf", "_blank")
             }
             className="hidden md:flex items-center gap-2 px-6 py-2.5 bg-linear-to-r from-lime-400 via-teal-400 to-emerald-500 text-black font-semibold rounded-xl shadow-[0_0_15px_rgba(0,255,150,0.4)]"
             whileHover={{ scale: 1.05 }}
@@ -160,7 +160,7 @@ export const Navigation: React.FC<NavigationProps> = ({
               <motion.button
                 onClick={() =>
                   window.open(
-                    "/files/Njikam_Mbehou_Chouaibou_CV.pdf",
+                    "/files/NjIKAM_MBEHOU_CHOUAIBOU.pdf",
                     "_blank"
                   )
                 }

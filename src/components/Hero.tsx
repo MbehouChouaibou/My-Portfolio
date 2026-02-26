@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Linkedin, MapPin, Code, Cloud, Server, Database, Zap, Cpu } from "lucide-react";
+import { ExternalLink, Github, Linkedin, MapPin, Code, Cloud, Server, Database, Brain, Cpu, Zap } from "lucide-react";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import profileImg from "../assets/WhatsApp Image 2025-10-21 at 12.11.45_fb607ba5.jpg";
 
@@ -27,7 +27,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       <div className="w-full grid lg:grid-cols-2 min-h-[calc(100svh-6rem)] lg:min-h-screen">
         {/* Left Side - Image - Full height matching right side */}
         <motion.div
-          className="relative order-1 lg:order-1 h-[240px] sm:h-[320px] md:h-[420px] lg:h-full"
+          className="relative order-1 lg:order-1 h-[320px] sm:h-[380px] md:h-[420px] lg:h-full"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -40,7 +40,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               <img
                 src={profileImg}
                 alt="Njikam Mbehou Chouaibou"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-[center_18%] lg:object-center"
               />
             </div>
           </div>
@@ -94,26 +94,50 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                   <Cpu size={18} />
                   Core Expertise
                 </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
                   <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
                     <Code size={14} className="text-lime-400" />
-                    <span className="text-sm">Full-Stack Dev</span>
+                    <span className="text-sm">Software Architecture</span>
                   </div>
                   <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
                     <Cloud size={14} className="text-teal-400" />
-                    <span className="text-sm">Cloud Solutions</span>
+                    <span className="text-sm">Cloud Engineering</span>
                   </div>
                   <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
                     <Server size={14} className="text-emerald-400" />
-                    <span className="text-sm">DevOps & CI/CD</span>
+                    <span className="text-sm">API & Microservices</span>
                   </div>
                   <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
                     <Database size={14} className="text-cyan-400" />
                     <span className="text-sm">Database Design</span>
                   </div>
                   <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
-                    <Zap size={14} className="text-yellow-400" />
-                    <span className="text-sm">Performance</span>
+                    <Cpu size={14} className="text-yellow-400" />
+                    <span className="text-sm">DevOps & CI/CD</span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
+                    <Brain size={14} className="text-fuchsia-400" />
+                    <span className="text-sm">AI Integration</span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
+                    <Code size={14} className="text-lime-300" />
+                    <span className="text-sm">System Design</span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
+                    <Zap size={14} className="text-amber-300" />
+                    <span className="text-sm">Testing & QA</span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
+                    <Cloud size={14} className="text-cyan-300" />
+                    <span className="text-sm">Observability</span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
+                    <Server size={14} className="text-emerald-300" />
+                    <span className="text-sm">Security Practices</span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg bg-[#0c1210]/50 border border-gray-800">
+                    <Brain size={14} className="text-violet-300" />
+                    <span className="text-sm">Prompt Engineering</span>
                   </div>
                 </div>
               </div>
@@ -141,17 +165,17 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               </div>
 
               {/* Quick Stats - Added content */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="mt-6 grid grid-cols-3 gap-3">
                 <div className="text-center p-3 rounded-xl bg-[#0c1210]/30 border border-gray-800/50">
-                  <div className="text-2xl font-bold text-lime-400">4+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-lime-400">4+</div>
                   <div className="text-xs text-gray-400">Projects</div>
                 </div>
                 <div className="text-center p-3 rounded-xl bg-[#0c1210]/30 border border-gray-800/50">
-                  <div className="text-2xl font-bold text-teal-400">1+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-teal-400">1+</div>
                   <div className="text-xs text-gray-400">Years Exp</div>
                 </div>
                 <div className="text-center p-3 rounded-xl bg-[#0c1210]/30 border border-gray-800/50">
-                  <div className="text-2xl font-bold text-emerald-400">100%</div>
+                  <div className="text-xl sm:text-2xl font-bold text-emerald-400">100%</div>
                   <div className="text-xs text-gray-400">Satisfaction</div>
                 </div>
               </div>
@@ -176,7 +200,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               <div className="hidden sm:block h-4 w-px bg-gray-700 mx-1" />
               <div className="flex items-center gap-1 text-xs sm:text-sm text-gray-400 flex-1">
                 <MapPin size={12} />
-                <span>Douala, Cameroon</span>
+                <span>Douala & Yaounde, Cameroon</span>
               </div>
               <div className="text-xs text-gray-500">
                 Available for freelance
