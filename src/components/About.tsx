@@ -36,15 +36,15 @@ export const About: React.FC = () => {
       <div className="max-w-6xl mx-auto space-y-8">
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
           <div className="lg:col-span-3 space-y-5 text-center lg:text-left">
-            <h3 className="text-3xl sm:text-4xl font-bold bg-linear-to-r from-lime-400 via-teal-400 to-emerald-500 bg-clip-text text-transparent">
+            <h3 className="text-3xl sm:text-4xl font-bold bg-linear-to-r from-emerald-700 via-teal-700 to-emerald-600 bg-clip-text text-transparent">
               Building reliable software with clean architecture
             </h3>
 
-            <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-              I am a <span className="text-lime-400 font-semibold">Software Engineer</span> focused on designing robust products that solve real-world problems. I work across <span className="text-teal-400">frontend</span>, <span className="text-cyan-400">backend</span>, and <span className="text-emerald-400">cloud systems</span>, with strong attention to maintainability and delivery speed.
+            <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
+              I am a <span className="text-emerald-800 font-semibold">Software Engineer</span> focused on designing robust products that solve real-world problems. I work across <span className="text-teal-800">frontend</span>, <span className="text-cyan-800">backend</span>, and <span className="text-emerald-700">cloud systems</span>, with strong attention to maintainability and delivery speed.
             </p>
 
-            <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
               I have built solutions in fintech, robotics, and enterprise environments, with a practical approach to architecture, automation, and performance tuning.
             </p>
           </div>
@@ -53,12 +53,12 @@ export const About: React.FC = () => {
             {STATS.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-lime-400/20 bg-linear-to-br from-lime-400/5 to-teal-500/5 px-4 py-4 text-center"
+                className="rounded-2xl border border-emerald-200 bg-linear-to-br from-emerald-100 to-teal-100 px-4 py-4 text-center"
               >
-                <p className="text-2xl sm:text-3xl font-extrabold bg-linear-to-r from-lime-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
+                <p className="text-2xl sm:text-3xl font-extrabold text-emerald-800">
                   {stat.number}
                 </p>
-                <p className="mt-1 text-xs sm:text-sm text-gray-400">{stat.label}</p>
+                <p className="mt-1 text-xs sm:text-sm text-slate-500">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -69,21 +69,21 @@ export const About: React.FC = () => {
             {HIGHLIGHTS.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-lime-400/20 bg-[#0b1411]/70 px-4 py-3 text-sm sm:text-base text-gray-300"
+                className="rounded-2xl border border-emerald-200 bg-white/80 px-4 py-3 text-sm sm:text-base text-slate-700"
               >
-                <span className="text-lime-400 mr-2">•</span>
+                <span className="text-emerald-700 mr-2">•</span>
                 {item}
               </div>
             ))}
           </div>
 
-          <div className="rounded-2xl border border-lime-400/20 bg-[#0b1411]/70 p-4">
-            <p className="text-sm uppercase tracking-[0.2em] text-teal-300/90 mb-3">Tech Focus</p>
+          <div className="rounded-2xl border border-emerald-200 bg-white/80 p-4">
+            <p className="text-sm uppercase tracking-[0.2em] text-emerald-800 mb-3">Tech Focus</p>
             <div className="flex flex-wrap gap-2.5">
               {TECH_STACK.map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1.5 rounded-lg border border-lime-400/30 bg-lime-400/10 text-lime-300 text-xs sm:text-sm font-medium"
+                  className="px-3 py-1.5 rounded-lg border border-emerald-300 bg-emerald-100 text-emerald-800 text-xs sm:text-sm font-semibold"
                 >
                   {tech}
                 </span>

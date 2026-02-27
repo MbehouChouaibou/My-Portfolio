@@ -22,7 +22,7 @@ export const EXPERIENCES: Experience[] = [
     technologies: ["AWS", "Docker", "Spring Boot", "React", "PostgreSQL"]
   },
   {
-    company: "DITALIS SA",
+    company: "DIGITALIS SA",
     period: "June 2023 - September 2024",
     role: "Full Stack Developer",
     points: [
@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     technologies: ["Next.js", "Tailwind CSS", "JavaScript", "TypeScript", "REST APIs"],
     impact: "Improved usability and administrative efficiency with scalable role-based academic dashboards.",
     category: "Education",
-    githubUrl: "#",
+    githubUrl: "https://github.com/MbehouChouaibou?tab=repositories",
     liveUrl: "https://www.univ-mbere.org/"
   },
   {
@@ -72,8 +72,8 @@ export const PROJECTS: Project[] = [
     technologies: ["React", "Spring Boot", "PostgreSQL", "Docker", "AWS"],
     impact: "Reduced inventory tracking time by 60%",
     category: "Full Stack",
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/MbehouChouaibou?tab=repositories",
+    liveUrl: ""
   },
   {
     title: "Speech Recognition Mobile App",
@@ -81,8 +81,8 @@ export const PROJECTS: Project[] = [
     technologies: ["React Native", "Python", "TensorFlow", "AWS"],
     impact: "Improved accessibility for 1000+ users",
     category: "Mobile",
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/MbehouChouaibou?tab=repositories",
+    liveUrl: ""
   },
   {
     title: "African Robot Web Interface",
@@ -90,8 +90,8 @@ export const PROJECTS: Project[] = [
     technologies: ["Next.js", "Express.js", "WebSocket", "MongoDB"],
     impact: "Enhanced robot control efficiency by 45%",
     category: "Web",
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/MbehouChouaibou?tab=repositories",
+    liveUrl: ""
   },
   {
     title: "Trade Force Automation",
@@ -99,8 +99,8 @@ export const PROJECTS: Project[] = [
     technologies: ["React", "ASP.NET Core", "SQL Server", "Azure"],
     impact: "Increased sales team productivity by 35%",
     category: "Enterprise",
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/MbehouChouaibou?tab=repositories",
+    liveUrl: ""
   },
   {
     title: "Épargne+ Banking App",
@@ -108,8 +108,8 @@ export const PROJECTS: Project[] = [
     technologies: ["React", "Spring Boot", "Oracle DB", "AWS"],
     impact: "Serving 5000+ active users daily",
     category: "Fintech",
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/MbehouChouaibou?tab=repositories",
+    liveUrl: ""
   },
 ];
 

@@ -15,24 +15,24 @@ export const Experience: React.FC = () => {
         {EXPERIENCES.map((exp) => (
           <article
             key={`${exp.company}-${exp.period}`}
-            className="rounded-2xl border border-lime-400/20 bg-[#0b1411]/70 p-5 sm:p-6"
+            className="rounded-2xl border border-emerald-200 bg-white/80 p-5 sm:p-6"
           >
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">{exp.company}</h3>
-                <p className="text-lime-400 font-semibold">{exp.role}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900">{exp.company}</h3>
+                <p className="text-emerald-800 font-semibold">{exp.role}</p>
               </div>
 
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl border border-lime-400/30 bg-lime-500/10">
-                <Calendar size={14} className="text-lime-400" />
-                <span className="text-sm text-white">{exp.period}</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl border border-emerald-300 bg-emerald-100">
+                <Calendar size={14} className="text-emerald-700" />
+                <span className="text-sm text-slate-800">{exp.period}</span>
               </div>
             </div>
 
-            <ul className="space-y-2 mb-4 text-gray-300 text-sm sm:text-base">
+            <ul className="space-y-2 mb-4 text-slate-700 text-sm sm:text-base">
               {exp.points.map((point, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="w-2 h-2 rounded-full bg-lime-400 mt-2 shrink-0" />
+                  <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
                   <span>{point}</span>
                 </li>
               ))}
@@ -42,7 +42,7 @@ export const Experience: React.FC = () => {
               {exp.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-2.5 py-1 rounded-lg text-xs sm:text-sm font-medium border border-lime-400/30 bg-lime-400/10 text-lime-300"
+                  className="px-2.5 py-1 rounded-lg text-xs sm:text-sm font-semibold border border-emerald-300 bg-emerald-100 text-emerald-800"
                 >
                   {tech}
                 </span>

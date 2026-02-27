@@ -41,6 +41,9 @@ Set these variables in `.env`:
 - `CONTACT_TO_EMAIL`
 - `CONTACT_FROM_EMAIL` (or reuse `SMTP_USER`)
 - `CORS_ORIGIN`
+- `VITE_API_BASE_URL` (optional)
+  - Local dev: `http://localhost:8787`
+  - Production: leave empty so frontend uses same-origin `/api/contact`
 
 Contact form endpoint:
 - `POST /api/contact`

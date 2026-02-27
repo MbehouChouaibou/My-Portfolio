@@ -4,9 +4,9 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative py-20 bg-[#0d1512]/70 backdrop-blur-xl border-t border-white/10 overflow-hidden">
+    <footer className="relative py-20 bg-[#eefcf3]/80 backdrop-blur-xl border-t border-emerald-200 overflow-hidden">
       {/* Neon glow background */}
-      <div className="absolute inset-0 bg-linear-to-r from-lime-400/10 via-teal-400/10 to-cyan-400/10 rounded-3xl blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-r from-lime-300/20 via-emerald-300/20 to-teal-300/20 rounded-3xl blur-3xl pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-8">
         <motion.div
@@ -28,22 +28,32 @@ export const Footer: React.FC = () => {
                 <div className="font-semibold text-transparent bg-clip-text bg-linear-to-r from-lime-400 to-teal-400">
                   Njikam Mbehou Chouaibou
                 </div>
-                <div className="text-sm text-gray-400">Software Engineer</div>
+                <div className="text-sm text-slate-600">Software Engineer</div>
               </div>
             </div>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-slate-600">
               Building the future, one line of code at a time.
             </p>
           </div>
 
           <div className="flex items-center gap-6 justify-center md:justify-end">
-            <a href="#" className="text-gray-400 hover:text-lime-400 transition-colors">
+            <a
+              href="https://github.com/MbehouChouaibou?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-600 hover:text-emerald-700 transition-colors"
+            >
               <Github size={20} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/njikam-mbehou-chouaibou-bbb246207"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-600 hover:text-teal-700 transition-colors"
+            >
               <Linkedin size={20} />
             </a>
-            <a href="mailto:chouaiboumbehou@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
+            <a href="mailto:chouaiboumbehou@gmail.com" className="text-slate-600 hover:text-cyan-700 transition-colors">
               <Mail size={20} />
             </a>
           </div>
@@ -56,7 +66,7 @@ export const Footer: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-slate-600">
             © {new Date().getFullYear()} Njikam Mbehou Chouaibou
           </p>
         </motion.div>

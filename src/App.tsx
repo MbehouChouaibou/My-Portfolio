@@ -26,17 +26,20 @@ export default function App(): JSX.Element {
 
   /* ------------------ MANUAL NAVIGATION ------------------ */
   const scrollToSection = (id: string) => {
+    setMobileOpen(false);
+
     const targetId = id === "home" ? "home" : "portfolio-sections";
     const el = document.getElementById(targetId);
     if (!el) return;
 
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    requestAnimationFrame(() => {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
     setActiveSection(id);
-    setMobileOpen(false);
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0f0d] text-gray-100 transition-colors duration-300 overflow-x-hidden">
+    <div className="min-h-screen bg-[#f4fbf6] text-slate-900 transition-colors duration-300 overflow-x-hidden">
       <AnimatedBackground />
 
       <Navigation
