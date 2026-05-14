@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "certifications": "Certifications",
+    "education": "Formation",
+    "resume": "CV",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "viewProjects": "Voir les projets",
+    "getInTouch": "Me contacter",
+    "downloadResume": "CV",
+    "openToWork": "Disponible pour opportunités",
+    "byTheNumbers": "En chiffres"
+  },
+  "about": {
+    "label": "Qui je suis"
+  },
+  "skills": {
+    "label": "Ce que je maîtrise",
+    "all": "Tout",
+    "softSkills": "Soft Skills"
+  },
+  "experience": {
+    "label": "Où j'ai travaillé",
+    "current": "Actuel",
+    "present": "Aujourd'hui"
+  },
+  "projects": {
+    "label": "Ce que j'ai construit",
+    "viewAll": "Voir tous les projets",
+    "viewLess": "Voir moins",
+    "liveDemo": "Démo live",
+    "sourceCode": "Source",
+    "caseStudy": "Étude de cas",
+    "impact": "Impact"
+  },
+  "certifications": {
+    "label": "Certifications",
+    "verify": "Vérifier"
+  },
+  "education": {
+    "label": "Formation académique"
+  },
+  "resume": {
+    "download": "Télécharger le CV"
+  },
+  "blog": {
+    "label": "Mes écrits",
+    "readMore": "Lire la suite",
+    "minRead": "min de lecture"
+  },
+  "contact": {
+    "label": "Dites bonjour",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "votre@email.com",
+    "subjectPlaceholder": "De quoi s'agit-il ?",
+    "messagePlaceholder": "Parlez-moi de votre projet ou dites simplement bonjour...",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé ! Je vous répondrai bientôt.",
+    "error": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "theme": {
+    "toggle": "Changer le thème",
+    "light": "Clair",
+    "dark": "Sombre"
+  },
+  "language": {
+    "switch": "Changer la langue",
+    "en": "EN",
+    "fr": "FR"
+  },
+  "footer": {
+    "madeWith": "Construit avec Next.js & ♥",
+    "allRights": "Tous droits réservés."
+  },
+  "openToWork": {
+    "badge": "Disponible",
+    "message": "Je recherche activement de nouvelles opportunités. Si vous avez un poste correspondant à mes compétences, parlons-en !"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "message": "La page que vous cherchez n'existe pas.",
+    "back": "Retour à l'accueil"
+  }
+}

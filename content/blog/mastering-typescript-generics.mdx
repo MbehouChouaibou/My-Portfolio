@@ -1,0 +1,130 @@
+---
+title: "Mastering TypeScript Generics: From Basic to Advanced"
+excerpt: "Generics are TypeScript's superpower. Learn how to write reusable, type-safe utilities that eliminate runtime errors and make your API's self-documenting."
+date: "2024-09-15"
+readTime: 6
+tags: ["TypeScript", "JavaScript", "Best Practices"]
+---
+
+# Mastering TypeScript Generics
+
+Generics let you write functions and classes that work with multiple types while preserving type safety. They're the difference between an `any`-riddled codebase and a truly type-safe one.
+
+## The Problem Generics Solve
+
+Without generics, you face a choice: be specific (but rigid) or use `any` (and lose type safety):
+
+```ts
+// Too rigid — only works with numbers
+function first(arr: number[]): number { return arr[0]; }
+
+// Too loose — no type information at all
+function first(arr: any[]): any { return arr[0]; }
+```
+
+With generics, you get the best of both worlds:
+
+```ts
+function first<T>(arr: T[]): T {
+  return arr[0];
+}
+
+const n = first([1, 2, 3]);       // TypeScript knows: n is number
+const s = first(["a", "b"]);     // TypeScript knows: s is string
+```
+
+## Constraints
+
+Use `extends` to restrict what types a generic can accept:
+
+```ts
+function getLength<T extends { length: number }>(value: T): number {
+  return value.length;
+}
+
+getLength("hello");      // ✅ string has .length
+getLength([1, 2, 3]);    // ✅ array has .length
+getLength(42);           // ❌ Error: number has no .length
+```
+
+## Key-Value Constraints with `keyof`
+
+```ts
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // string ✅
+const age  = getProperty(user, "age");    // number ✅
+getProperty(user, "email");               // ❌ Error: "email" not in type
+```
+
+## Generic Utility Types
+
+TypeScript ships with built-in generic utilities:
+
+```ts
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+}
+
+// Pick only specific keys
+type PublicUser = Pick<User, "id" | "name">;
+
+// Exclude specific keys
+type SafeUser = Omit<User, "password">;
+
+// Make all fields optional
+type PartialUser = Partial<User>;
+
+// Make all fields required
+type RequiredUser = Required<User>;
+
+// Make all fields readonly
+type FrozenUser = Readonly<User>;
+```
+
+## Building Your Own Utilities
+
+Here are three real-world generic utilities I use in every project:
+
+```ts
+// Safely access nested properties
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+
+// Extract the resolved type of a Promise
+type Awaited<T> = T extends Promise<infer U> ? U : T;
+
+// Typed API response wrapper
+type ApiResponse<T> =
+  | { ok: true;  data: T;      error: null  }
+  | { ok: false; data: null;   error: string };
+
+async function fetchUser(id: number): Promise<ApiResponse<User>> {
+  try {
+    const res  = await fetch(`/api/users/${id}`);
+    const data = await res.json();
+    return { ok: true, data, error: null };
+  } catch (e) {
+    return { ok: false, data: null, error: String(e) };
+  }
+}
+
+// Usage — TypeScript knows which branch you're in
+const result = await fetchUser(1);
+if (result.ok) {
+  console.log(result.data.name);   // data is User ✅
+} else {
+  console.error(result.error);     // error is string ✅
+}
+```
+
+## Conclusion
+
+Generics unlock TypeScript's full potential. Start with simple `<T>` parameters, add `extends` constraints when you need narrowing, and reach for built-in utility types before writing your own. Your future self (and teammates) will thank you.

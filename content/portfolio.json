@@ -1,0 +1,311 @@
+{
+  "profile": {
+    "name": "NJIKAM MBEHOU Chouaibou",
+    "initials": "NMC",
+    "tagline": "Full-Stack Software Engineer",
+    "bio": [
+      "Motivated Software Engineer with strong experience in full-stack development, microservices architecture, and cloud deployment. Skilled in designing scalable web and mobile applications using React, .NET, Spring Boot, and AWS.",
+      "Passionate about creating inclusive and efficient digital solutions for businesses and communities. Strong communicator and problem-solver with a commitment to continuous learning and innovation."
+    ],
+    "location": "Douala, Cameroon",
+    "availabilityLabel": "Open to opportunities",
+    "photoUrl": "/images/profile.jpg",
+    "resumeUrl": "/files/NjIKAM_MBEHOU_CHOUAIBOU.pdf",
+    "typingRoles": [
+      "Full-Stack Engineer",
+      "React Developer",
+      ".NET / Spring Boot Developer",
+      "Microservices Architect",
+      "Mobile Developer"
+    ],
+    "stats": [
+      { "value": "3+",  "label": "Years exp." },
+      { "value": "7+",  "label": "Projects" },
+      { "value": "15+", "label": "Technologies" }
+    ],
+    "social": {
+      "github":   "https://github.com/EVERMATE",
+      "linkedin": "https://linkedin.com/in/njikam-mbehou",
+      "email":    "chouaiboumbehou@gmail.com"
+    }
+  },
+
+  "about": {
+    "title": "Building scalable systems, one service at a time.",
+    "paragraphs": [
+      "I'm a Full-Stack Software Engineer specializing in microservices architecture, cloud deployment, and modern web and mobile development. My journey spans from building core banking platforms to deploying digital transformation tools for real businesses.",
+      "I work across the full stack — React and Next.js on the frontend, ASP.NET Core and Spring Boot on the backend, PostgreSQL and SQL Server for data, Docker and AWS for infrastructure.",
+      "I graduated with a Master's in Software Engineering from the National Advanced School of Engineering, Douala (July 2025), and I bring both academic rigor and hands-on production experience to every project."
+    ],
+    "expertise": [
+      { "label": "React & Next.js",        "icon": "Code2"     },
+      { "label": "ASP.NET Core / C#",      "icon": "Server"    },
+      { "label": "Spring Boot / Java",     "icon": "Layers"    },
+      { "label": "Microservices & REST",   "icon": "GitBranch" },
+      { "label": "PostgreSQL / SQL Server","icon": "Database"  },
+      { "label": "Docker & AWS",           "icon": "Cloud"     },
+      { "label": "React Native",           "icon": "Brain"     },
+      { "label": "Agile / Scrum / CI-CD",  "icon": "Shield"    }
+    ]
+  },
+
+  "skills": {
+    "technical": [
+      { "name": "React",          "level": 90, "category": "Frontend"  },
+      { "name": "Next.js",        "level": 88, "category": "Frontend"  },
+      { "name": "TypeScript",     "level": 82, "category": "Frontend"  },
+      { "name": "Tailwind CSS",   "level": 90, "category": "Frontend"  },
+      { "name": "React Native",   "level": 75, "category": "Frontend"  },
+      { "name": "ASP.NET Core",   "level": 85, "category": "Backend"   },
+      { "name": "C# / .NET",      "level": 83, "category": "Backend"   },
+      { "name": "Spring Boot",    "level": 80, "category": "Backend"   },
+      { "name": "Node.js",        "level": 78, "category": "Backend"   },
+      { "name": "PostgreSQL",     "level": 78, "category": "Database"  },
+      { "name": "SQL Server",     "level": 80, "category": "Database"  },
+      { "name": "Docker",         "level": 72, "category": "DevOps"    },
+      { "name": "AWS",            "level": 68, "category": "DevOps"    },
+      { "name": "Git & CI/CD",    "level": 85, "category": "DevOps"    }
+    ],
+    "soft": [
+      "Problem-Solving & Analytical Thinking",
+      "Team Collaboration",
+      "Communication",
+      "Time Management",
+      "Adaptability",
+      "Continuous Learning",
+      "Agile / Scrum",
+      "Attention to Detail"
+    ]
+  },
+
+  "experiences": [
+    {
+      "company": "FLUX",
+      "role": "Full-Stack Software Engineer",
+      "period": "January 2025 – Present",
+      "current": true,
+      "location": "Remote",
+      "logoUrl": "",
+      "points": [
+        "Designed and developed core banking application features as part of a full-stack team, focusing on check management and critical banking services",
+        "Built responsive web interfaces using ASP.NET Razor Pages for server-side rendered frontend components",
+        "Implemented backend services and business logic using ASP.NET Core, ensuring high performance and data integrity",
+        "Developed Check Management microservices including check issuance, clearance, cancellation tracking, and fraud detection workflows",
+        "Integrated microservices via RESTful APIs, enabling modular and loosely coupled service communication",
+        "Collaborated with cross-functional teams to ensure compliance with banking standards and secure transaction processing"
+      ],
+      "technologies": ["ASP.NET Core", "C#", "Razor Pages", "SQL Server", "REST APIs", "Microservices", ".NET 6/8"]
+    },
+    {
+      "company": "AEON CLOUD",
+      "role": "Frontend Developer",
+      "period": "August 2024 – December 2024",
+      "current": false,
+      "location": "Remote",
+      "logoUrl": "",
+      "points": [
+        "Worked as a frontend developer building modern web interfaces using Next.js",
+        "Developed and maintained responsive UI components and page-level features for cloud-based applications",
+        "Collaborated with backend teams to integrate REST APIs and optimize data fetching strategies"
+      ],
+      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      "company": "DITALIS SA",
+      "role": "Full-Stack Developer",
+      "period": "February 2024 – July 2024",
+      "current": false,
+      "location": "Cameroon",
+      "logoUrl": "",
+      "points": [
+        "Designed and implemented a Trade Force Automation platform as part of a major digital transformation initiative",
+        "Developed responsive web and mobile applications using React, React Native, and Spring Boot",
+        "Designed a Microservices architecture enabling modular RESTful APIs and better scalability",
+        "Implemented user management, analytics, and secure authentication services"
+      ],
+      "technologies": ["React", "React Native", "Spring Boot", "Java 21", "PostgreSQL", "Node.js", "Tailwind CSS", "Figma"]
+    },
+    {
+      "company": "CIME — Import Center of Medium-Sized Enterprises",
+      "role": "Web Developer (Academic Project)",
+      "period": "Academic Year 2023 – 2024",
+      "current": false,
+      "location": "Bertoua, Cameroon",
+      "logoUrl": "",
+      "points": [
+        "Developed a digital library system to archive past records and improve data retrieval efficiency",
+        "Collaborated within the IT service team to enhance the center's digital infrastructure",
+        "Designed and implemented responsive web interfaces using React and Tailwind CSS",
+        "Participated in requirements analysis, planning, and implementation phases"
+      ],
+      "technologies": ["React", "Tailwind CSS", "REST APIs"]
+    },
+    {
+      "company": "African Robot Project",
+      "role": "Frontend Developer (Academic Project)",
+      "period": "Academic Year 2022 – 2023",
+      "current": false,
+      "location": "Douala, Cameroon",
+      "logoUrl": "",
+      "points": [
+        "Planned and developed a React-based web interface for interacting with an African robot prototype",
+        "Improved user engagement through optimized UI design and accessibility enhancements",
+        "Integrated real-time robot control features using Web APIs and WebSockets"
+      ],
+      "technologies": ["React", "Redux", "WebSockets", "Tailwind CSS"]
+    }
+  ],
+
+  "projects": [
+    {
+      "slug": "truesoft-core-banking",
+      "title": "TRUESOFT Core Banking System",
+      "description": "A modern, responsive full-stack web application for core banking operations, specializing in Check Management and banking microservices, built with ASP.NET Core Razor Pages and Web API.",
+      "category": "Full-Stack",
+      "featured": true,
+      "technologies": ["ASP.NET Core", "C#", "Razor Pages", ".NET 6/8", "SQL Server", "Entity Framework Core", "REST APIs", "Microservices", "Bootstrap"],
+      "impact": "Reduced processing time",
+      "coverUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "caseStudy": "Designed and implemented Check Management microservices including check issuance, clearance tracking, cancellation workflows, and fraud detection alerts.\n\nBuilt responsive admin and teller dashboards using ASP.NET Razor Pages for server-side rendered views. Developed dynamic pages for check lifecycle management, transaction history, and customer account views.\n\nIntegrated frontend Razor Pages with backend microservices via RESTful APIs for real-time data synchronization. Implemented additional microservices for transaction logging, account validation, balance inquiries, and reporting.\n\nEnabled inter-service communication using asynchronous messaging patterns for better scalability and fault tolerance. Ensured secure data handling with role-based access control for tellers, branch managers, and system administrators.\n\nImpact: Digitized and streamlined check processing workflows, reducing manual errors and processing time. Provided a scalable, modular core banking platform that improved transaction traceability and operational efficiency."
+    },
+    {
+      "slug": "university-management-system",
+      "title": "University Management System",
+      "description": "A modern, responsive frontend web application to manage university operations — students, courses, departments, and academic data — built with Next.js for EPFPS Meiganga.",
+      "category": "Frontend",
+      "featured": true,
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "REST APIs"],
+      "impact": "Live in production",
+      "coverUrl": "",
+      "liveUrl": "https://www.univ-mbere.org/",
+      "githubUrl": "",
+      "caseStudy": "Designed and implemented reusable UI components using Tailwind CSS. Developed dynamic pages for student management, course listings, and department dashboards.\n\nIntegrated frontend with backend APIs for data fetching and state management. Implemented role-based UI views for administrators, professors, and students.\n\nEnsured responsive design and cross-browser compatibility across all pages.\n\nImpact: Improved usability and efficiency of university administration workflows, providing a scalable and user-friendly interface for managing academic information."
+    },
+    {
+      "slug": "trade-force-automation",
+      "title": "Trade Force Automation",
+      "description": "A web-based platform to digitalize and streamline the activities of sales agents — real-time tracking, structured data collection on prospects and clients, and performance analytics.",
+      "category": "Full-Stack",
+      "featured": true,
+      "technologies": ["React", "React Native", "Node.js", "Spring Boot", "Java 21", "PostgreSQL", "Tailwind CSS", "Figma", "Jira"],
+      "impact": "Reduced paperwork",
+      "coverUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "caseStudy": "Developed a dashboard interface for real-time tracking of field agents' locations and activities, improving supervision and coordination.\n\nImplemented dynamic forms for collecting structured data on prospects and clients during visits, enhancing CRM capabilities.\n\nBuilt performance analytics features to assess agent efficiency and sales trends, aiding managerial decision-making. Integrated secure authentication and user role management for sales agents and managers.\n\nImpact: Improved productivity and transparency of sales operations, reduced paperwork, and enabled data-driven decision-making through digital tools."
+    },
+    {
+      "slug": "smart-inventory-management",
+      "title": "Smart Inventory Management System",
+      "description": "A web-based inventory management system built with ASP.NET Core and SQL Server to help small shops track products, suppliers, and sales efficiently.",
+      "category": "Full-Stack",
+      "featured": false,
+      "technologies": ["ASP.NET Core", "C#", "Entity Framework", "SQL Server", "Next.js", "Tailwind CSS", "Bootstrap"],
+      "impact": "Reduced manual errors",
+      "coverUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "caseStudy": "Built CRUD modules for product and supplier management, integrated authentication with role-based access, and developed an analytics dashboard for sales reporting.\n\nImpact: Simplified business operations and reduced manual errors in stock management for small retail businesses."
+    },
+    {
+      "slug": "epargne-plus",
+      "title": "Épargne+ Online Banking App",
+      "description": "A digital savings platform tailored for small businesses, enabling users to make contributions starting from 100 FCFA — promoting financial inclusion for micro-entrepreneurs.",
+      "category": "Full-Stack",
+      "featured": false,
+      "technologies": ["Figma", "AWS EC2", "AWS S3", "AWS Route 53", "Docker"],
+      "impact": "Financial inclusion",
+      "coverUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "caseStudy": "Designed clean, user-friendly interface mockups using Figma, optimized for simplicity and accessibility. Created intuitive user flows for account setup, savings contributions, and transaction history.\n\nAssisted in deploying the application on AWS infrastructure (EC2, S3, Route 53) ensuring reliability and accessibility.\n\nImpact: Delivered a functional and scalable app interface that empowers small business owners to manage their savings easily with secure, stable cloud-based access."
+    },
+    {
+      "slug": "african-robot-interface",
+      "title": "African Robot Web Interface",
+      "description": "A React web interface to interact with an African robot model — send commands, monitor real-time status updates, and track command history via WebSockets.",
+      "category": "Frontend",
+      "featured": false,
+      "technologies": ["React", "Redux", "WebSockets", "Tailwind CSS", "Web APIs"],
+      "impact": "Real-time control",
+      "coverUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "caseStudy": "Created a control panel interface to send commands and monitor the robot's actions and status updates. Built a Command History log for tracking user interactions.\n\nIntegrated real-time robot data using WebSocket for live updates, providing an engaging and responsive user experience.\n\nImpact: Enhanced interaction with robotics technology by creating a structured, easy-to-navigate web interface."
+    },
+    {
+      "slug": "speech-recognition-mobile",
+      "title": "Speech Recognition Mobile Interface",
+      "description": "A React Native mobile application with integrated speech recognition, enabling hands-free voice command processing with real-time visual feedback.",
+      "category": "Mobile",
+      "featured": false,
+      "technologies": ["React Native", "Speech Recognition API", "Tailwind CSS (NativeWind)"],
+      "impact": "Hands-free UX",
+      "coverUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "caseStudy": "Built a custom React Native component to capture and process voice commands in real-time, displaying recognized text and responses. Designed an intuitive interface providing visual feedback on the app's listening status.\n\nImplemented a settings screen for users to adjust language and recognition sensitivity, improving accessibility and control.\n\nImpact: Created a seamless, voice-activated experience paving the way for further AI integration in mobile applications."
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "Master's in Software Engineering",
+      "issuer": "National Advanced School of Engineering, Douala",
+      "date": "July 2025",
+      "credentialUrl": "",
+      "logoUrl": ""
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "National Advanced School of Engineering, Douala",
+      "degree": "Master's in Software Engineering (Year 5)",
+      "period": "2020 – July 2025",
+      "location": "Douala, Cameroon",
+      "logoUrl": "",
+      "highlights": [
+        "Graduated July 2025",
+        "Focus: Software development, cloud systems, microservices, and system architecture",
+        "Final project: Trade Force Automation platform — full-stack microservices app used in production"
+      ]
+    }
+  ],
+
+  "testimonials": [],
+
+  "blog": [],
+
+  "resume": {
+    "heading": "Download My Resume",
+    "description": "Get a detailed overview of my experience, skills, and projects in a clean, professional format.",
+    "url": "/files/NjIKAM_MBEHOU_CHOUAIBOU.pdf",
+    "buttonLabel": "Download Resume"
+  },
+
+  "contact": {
+    "heading": "Let's Work Together",
+    "description": "Have a project in mind, a role to fill, or just want to say hi? My inbox is always open.",
+    "email": "chouaiboumbehou@gmail.com"
+  },
+
+  "nav": [
+    { "key": "home",            "href": "/"              },
+    { "key": "about",           "href": "/#about"        },
+    { "key": "skills",          "href": "/#skills"       },
+    { "key": "experience",      "href": "/#experience"   },
+    { "key": "projects",        "href": "/#projects"     },
+    { "key": "certifications",  "href": "/#certifications"},
+    { "key": "education",       "href": "/#education"    },
+    { "key": "resume",          "href": "/#resume"       },
+    { "key": "blog",            "href": "/blog"          },
+    { "key": "contact",         "href": "/#contact"      }
+  ],
+
+  "footer": {
+    "copyright": "NJIKAM MBEHOU Chouaibou"
+  }
+}

@@ -9,10 +9,18 @@ lerna-debug.log*
 
 node_modules
 dist
-dist-ssr
+dist-sr
 *.local
+
+# Env — keep .env.example committed; never commit .env
 .env
 .env.*
+!.env.example
+
+# Next.js build output
+.next
+out
+tsconfig.tsbuildinfo
 
 # Editor directories and files
 .vscode/*

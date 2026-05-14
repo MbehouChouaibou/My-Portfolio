@@ -1,0 +1,133 @@
+---
+title: "Getting Started with Next.js 15: App Router Deep Dive"
+excerpt: "A comprehensive guide to Next.js 15 App Router — layouts, server components, streaming, and everything you need to build production-ready applications."
+date: "2024-11-01"
+readTime: 8
+tags: ["Next.js", "React", "TypeScript"]
+---
+
+# Getting Started with Next.js 15
+
+Next.js 15 is a major release that doubles down on the App Router, React 19, and developer experience. In this post I'll walk through the key concepts you need to build production-ready apps.
+
+## Why App Router?
+
+The Pages Router served us well for years, but it had fundamental limitations — data fetching was tied to the page level, and code-splitting was coarse. The App Router fixes this with:
+
+- **Server Components by default** — zero client JavaScript unless you opt in with `"use client"`
+- **Nested layouts** — share UI between routes without re-rendering
+- **Streaming** — progressively send HTML using `<Suspense>` boundaries
+- **Parallel and intercepting routes** — build modal patterns and dashboards with clean URLs
+
+## Project Structure
+
+```
+app/
+  layout.tsx       ← root layout (wraps every route)
+  page.tsx         ← home page (/)
+  about/
+    page.tsx       ← about page (/about)
+  dashboard/
+    layout.tsx     ← dashboard-specific layout
+    page.tsx       ← dashboard home
+    settings/
+      page.tsx     ← /dashboard/settings
+```
+
+Every `layout.tsx` wraps its children but persists across navigations — great for navbars, sidebars, and providers.
+
+## Server vs Client Components
+
+The most important mental model shift: **all components are Server Components by default**.
+
+```tsx
+// ✅ Server Component — runs only on the server, no JS bundle cost
+export default async function UserList() {
+  const users = await db.users.findMany();       // direct DB access!
+  return <ul>{users.map(u => <li key={u.id}>{u.name}</li>)}</ul>;
+}
+```
+
+```tsx
+// ✅ Client Component — add "use client" to use hooks/events
+"use client";
+
+import { useState } from "react";
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(c => c + 1)}>{count}</button>;
+}
+```
+
+**Rule of thumb**: push `"use client"` as far down the tree as possible. Keep data fetching and heavy logic in Server Components.
+
+## Data Fetching
+
+No more `getServerSideProps` or `getStaticProps`. Fetch data directly inside your Server Components:
+
+```tsx
+// Static (cached forever, fastest)
+const data = await fetch("https://api.example.com/posts", {
+  cache: "force-cache",
+});
+
+// ISR — revalidate every 60 seconds
+const data = await fetch("https://api.example.com/posts", {
+  next: { revalidate: 60 },
+});
+
+// Dynamic — always fresh
+const data = await fetch("https://api.example.com/posts", {
+  cache: "no-store",
+});
+```
+
+## generateStaticParams
+
+For dynamic routes, tell Next.js which slugs to pre-render at build time:
+
+```tsx
+// app/blog/[slug]/page.tsx
+
+export async function generateStaticParams() {
+  const posts = await getPosts();
+  return posts.map(post => ({ slug: post.slug }));
+}
+
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;   // Note: params is now a Promise in Next.js 15
+  const post = await getPost(slug);
+  return <article>{post.content}</article>;
+}
+```
+
+## Streaming with Suspense
+
+Wrap slow components in `<Suspense>` to stream their HTML as it resolves:
+
+```tsx
+import { Suspense } from "react";
+import { SlowComponent } from "./SlowComponent";
+
+export default function Page() {
+  return (
+    <main>
+      <h1>Welcome</h1>
+      <Suspense fallback={<div>Loading recommendations...</div>}>
+        <SlowComponent />   {/* streams in when ready */}
+      </Suspense>
+    </main>
+  );
+}
+```
+
+## Wrapping Up
+
+Next.js 15's App Router fundamentally changes how you think about React applications. Embrace Server Components for data and logic, add `"use client"` only where you need interactivity, and let Suspense handle loading states elegantly.
+
+The mental model takes a day to click, but once it does, you'll wonder how you shipped React apps any other way.

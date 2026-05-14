@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "education": "Education",
+    "resume": "Resume",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "viewProjects": "View Projects",
+    "getInTouch": "Get In Touch",
+    "downloadResume": "Resume",
+    "openToWork": "Open to opportunities",
+    "byTheNumbers": "By the numbers"
+  },
+  "about": {
+    "label": "Who I am"
+  },
+  "skills": {
+    "label": "What I know",
+    "all": "All",
+    "softSkills": "Soft Skills"
+  },
+  "experience": {
+    "label": "Where I've worked",
+    "current": "Current",
+    "present": "Present"
+  },
+  "projects": {
+    "label": "What I've built",
+    "viewAll": "View all projects",
+    "viewLess": "Show less",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source",
+    "caseStudy": "Case Study",
+    "impact": "Impact"
+  },
+  "certifications": {
+    "label": "Credentials",
+    "verify": "Verify"
+  },
+  "education": {
+    "label": "Academic background"
+  },
+  "resume": {
+    "download": "Download Resume"
+  },
+  "blog": {
+    "label": "My writing",
+    "readMore": "Read more",
+    "minRead": "min read"
+  },
+  "contact": {
+    "label": "Say hello",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "your@email.com",
+    "subjectPlaceholder": "What's this about?",
+    "messagePlaceholder": "Tell me about your project or just say hi...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll get back to you soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "switch": "Switch language",
+    "en": "EN",
+    "fr": "FR"
+  },
+  "footer": {
+    "madeWith": "Built with Next.js & ♥",
+    "allRights": "All rights reserved."
+  },
+  "openToWork": {
+    "badge": "Open to Work",
+    "message": "I'm actively looking for new opportunities. If you have a role that matches my skills, let's talk!"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you're looking for doesn't exist.",
+    "back": "Go Home"
+  }
+}
