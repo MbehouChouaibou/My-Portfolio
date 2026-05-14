@@ -20,8 +20,8 @@ export async function PUT(req: NextRequest) {
 
   const newContent = await req.json();
 
-  const owner = process.env.GITHUB_OWNER ?? "EVERMATE";
-  const repo  = process.env.GITHUB_REPO  ?? "my-portfolio";
+  const owner = process.env.GITHUB_OWNER ?? "MbehouChouaibou";
+  const repo  = process.env.GITHUB_REPO  ?? "My-Portfolio";
   const token = process.env.GITHUB_TOKEN;
 
   if (!token) {
