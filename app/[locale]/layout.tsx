@@ -35,19 +35,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const { profile } = getPortfolioData();
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   return {
     title:       { default: profile.name, template: `%s | ${profile.name}` },
     description: profile.bio[0],
-    metadataBase: new URL(
-      process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
-    ),
+    metadataBase: new URL(siteUrl),
+    icons: {
+      icon:  [{ url: "/icon.jpg", type: "image/jpeg" }],
+      apple: [{ url: "/icon.jpg", type: "image/jpeg" }],
+    },
     openGraph: {
       type:   "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       title:  profile.name,
       description: profile.bio[0],
+      images: [{ url: "/images/profile.jpg", width: 800, height: 800, alt: profile.name }],
     },
-    twitter: { card: "summary_large_image", title: profile.name },
+    twitter: {
+      card:  "summary_large_image",
+      title: profile.name,
+      images: ["/images/profile.jpg"],
+    },
   };
 }
 
